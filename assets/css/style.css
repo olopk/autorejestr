@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    color: #345e68;
+}
+h1, h2{
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 1.1vh 0vh;
+    line-height: 2rem;
+}
+p{
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+}
+/* NAVIGATION */
+.burger{
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.burger__bar{
+    width: 13vw;
+    height: 2vw;
+    margin-bottom: 1.5vw;
+    border-radius: 2px;
+    background-color: antiquewhite;
+}
+/* -----------*/
+
+.section{
+    height: 100vh;
+    display: flex;
+}
+.infobox{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 4px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(224,220,224,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(224,220,224,1);
+    box-shadow: 10px 10px 5px 0px rgba(224,220,224,1); 
+}
+.section__home{
+    background-image: url(/assets/images/glut1.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(234, 239, 243);
+    justify-content: center;
+    align-items: center;
+}
+.infobox-home{
+    width: 70%;
+    height: 63%;
+    justify-content: space-between;
+}
+.infobox-home__p{
+    letter-spacing: 2px;
+}
+.infobox-home__img{
+    width: 70%;
+    display: block;
+    margin: 2vh auto;
+}
+
+
