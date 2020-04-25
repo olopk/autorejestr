@@ -18,15 +18,19 @@ h1, h2{
 h2{
     font-size: 1.1rem;
 }
-p{
-    font-family: "Arial Black", Gadget, sans-serif;
+p, span{
+    font-family: "Calibri Light", sans-serif;
     text-align: center;
 }
 /* NAVIGATION */
+.navigation-bar{
+    position: fixed;
+    /* top: 5vw;
+    left: 5vw; */
+    z-index: 50;
+}
 .burger{
-    position: absolute;
-    top: 5vw;
-    left: 5vw;
+    margin: 3vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,11 +39,51 @@ p{
     width: 13vw;
     height: 2vw;
     margin-bottom: 1.5vw;
-    border-radius: 2px;
-    background-color: rgb(95, 93, 90);
+    border-radius: 4px;
+    background-color: rgb(190, 190, 190);
+}
+.desktop-nav{
+    display: none;
+}
+.sidedrawer{
+    z-index: 51;
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: -100vw;
+    opacity: 1;
+    transition: left 1s ease-in-out;
+}
+.sidedrawer--visible{
+    left: 0;
+}
+.mobile-nav{
+    width: 70vw;
+    height: 100vh;
+    background-color: rgba(234, 239, 243, 0.97);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-nav__ul{
+    list-style-type: none; 
+}
+.mobile-nav__ul li{
+    margin: 7vh 0vh;
+}
+.mobile-nav__ul li a{
+    text-decoration: none;
+    color: inherit;
 }
 /* -----------*/
-
+.container{
+    z-index: 100;
+}
 .section{
     height: 100vh;
     display: flex;
@@ -54,7 +98,6 @@ p{
     -moz-box-shadow: 10px 10px 5px 0px rgba(224,220,224,1);
     box-shadow: 10px 10px 5px 0px rgba(224,220,224,1); 
 }
-
 /* HOME */
 .section__home{
     background-image: url(/assets/images/glut1.png);
@@ -65,15 +108,15 @@ p{
     align-items: center;
 }
 .infobox-home{
-    width: 70%;
-    height: 63%;
+    width: 80%;
+    height: 70%;
     justify-content: space-between;
 }
 .infobox-home__p{
     letter-spacing: 2px;
 }
 .infobox-home__img{
-    width: 62%;
+    width: 47%;
     display: block;
     margin: 2vh auto;
 }
@@ -94,7 +137,7 @@ p{
     padding: 4vw;
 }
 .infobox-about__p{
-    font-size: 0.76rem;
+    font-size: 0.67rem;
     letter-spacing: 1px;
     margin: 1vh 3vw;
 }
@@ -116,7 +159,7 @@ p{
 }
 .infobox-details{
     width: 90%;
-    height: 85%;
+    height: 80%;
     padding: 4vw;
     justify-content: space-around;
 }
@@ -124,9 +167,12 @@ p{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2vh;
+    transform: translateY(40px);
+    transition: ease 1s;
 }
 .infobox-details__span{
     width: 80%;
+    text-align: left;
 }
 .ok_img{
     width: 10vw;
@@ -138,13 +184,14 @@ p{
     align-items: center;
     flex-direction: column;
     padding-top: 13vh;
+
 }
 .pricing-box-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 70%;
+    height: 69%;
 }
 .pricing-box{
     background-color: white;
@@ -153,9 +200,11 @@ p{
     width: 80%;
     height: 24%;
     position: relative;
+    transform: translateY(40px);
+    transition: ease 1s;
 }
 .pricing-box__p{
-    font-size: 0.75rem;
+    font-size: 0.77rem;
 }
 .pricing-box__circle{
     position: absolute;
@@ -182,4 +231,180 @@ p{
 }
 .pricing-footer-wrapper__pabout{
     font-size: 0.7rem;    
+}
+/* CONTACT */
+.section__contact{
+    background-image: url(/assets/images/glut4.png);
+    background-position: 0vw 106vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 12vh;
+    position: relative;
+}
+.contact__wrapper{
+    height: 65vh;
+}
+.contact-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 14vh;
+    margin-bottom: 3vh;
+}
+.contact-box__span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.contact-box__p{
+    font-size: 0.7rem;
+}
+.contact-box__phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%    
+}
+.phone__img{
+    
+}
+.contact-box__span--nr{
+    color: black;
+    font-weight: 600;
+}
+.contact__span{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.contact__p{
+    color: black;
+    margin: 10px 0px;
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
+.footer__logo{
+    width: 30%;
+    margin-top: 2vh;
+}
+@media screen and (min-width: 358px){
+    .infobox-home{
+        justify-content: space-around;
+    }
+    .infobox-home__p{
+        font-size: 1.1rem;
+    }
+    .infobox-about__p{
+        font-size: 0.82rem;
+    }
+    .infobox-details{
+        height: 70%;
+    }
+    .pricing-box__circle {
+        left: calc(50% - 9vw);
+        top: calc(100% - 9vw);
+        border-radius: 9vw;
+        height: 18vw;
+        width: 18vw;
+    }
+    .pricing-box__price{
+        font-size: 0.9rem;
+    }
+    .pricing-footer-wrapper{
+        height: 13%;
+    }
+    .section__contact{
+        background-position: bottom;
+    }
+    .footer__logo{
+        width: 35%;
+    }
+}
+@media screen and (min-width: 410px){
+    .infobox-about__p {
+        font-size: 0.92rem;
+    }
+    .pricing-box__p {
+        font-size: 0.9rem;
+    }
+    .pricing-box__price {
+        font-size: 1.2rem;
+    }
+    .contact-box__p {
+        font-size: 0.9rem;
+    }
+    .contact__span {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .burger{
+        display: none;
+    }
+    .navigation-bar{
+        background-image: url(/assets/images/navigation-bar.png);
+        background-position: top;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 556px;
+        padding: 0vw 5vw;
+        display: flex;
+        justify-content: end;
+        width: 100vw;
+    }
+    .navigation-bar__logo {
+        position: fixed;
+        top: 5vw;
+        left: 5vw;
+    }
+    .navigation-bar__logoimg{
+        width: 50%;
+    }
+    .desktop-nav{
+        display: block;
+        margin: 2vw 0vw;
+    }
+    .desktop-nav__ul{
+        list-style-type: none;
+        display: flex;
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+        align-items: center; 
+        flex-wrap: wrap;
+    }
+    .desktop-nav__ul li{
+        margin: 1vh 0vh;
+        text-align: center;
+    }
+    .desktop-nav__ul li a{
+        text-decoration: none;
+        color: white;
+        font-family: "Arial Black", Gadget, sans-serif;
+    }
+    .section__home{
+        background-image: url(/assets/images/glu1_desktop.png);
+    }
+    .infobox-home {
+        width: 46%;
+        height: 30%;
+        justify-content: center;
+    }
+    .infobox-home__mobileH1, .infobox-home__p, .infobox-home__img{
+        display: none;
+    }
+    .infobox-home__desktop-img{
+        width: 20%;
+        position: absolute;
+        left: 71vw;
+        top: 34vw;
+    }
+    .infobox-home__desktopH2{
+        margin: 0;
+    }
 }
