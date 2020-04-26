@@ -388,7 +388,9 @@ p, span{
         font-family: "Arial Black", Gadget, sans-serif;
     }
     .section__home{
-        background-image: url(/assets/images/glu1_desktop.png);
+        background-image: url(/assets/images/glu1_desktop.png), url(/assets/images/bg_section_home.png);
+        background-position: top, bottom;
+        background-repeat: no-repeat, no-repeat;
     }
     .infobox-home {
         width: 46%;
@@ -404,7 +406,140 @@ p, span{
         left: 71vw;
         top: 34vw;
     }
+    .infobox-home__desktopH1, .infobox-home__desktopH2{
+        letter-spacing: 5px;
+    }
+    .infobox-home__desktopH1{
+        font-size: 2.3rem;
+        margin: 0.6vh 0vh 1.2vh 0vh;
+    }
     .infobox-home__desktopH2{
-        margin: 0;
+        font-size: 1.7rem;
+        margin: 0.6vh 0vh;
+    }
+    .infobox-home__desktop_p{
+        letter-spacing: 5px;
+        font-size: 1.2rem;
+    }
+    .section__about{
+        background-image: url(/assets/images/bg_section_about.png);
+        background-size: 124%;
+        background-position: center;
+        align-items: flex-end;
+    }
+    .infobox-about {
+        width: 62%;
+        height: 35%;
+        margin: 0vw 10vw;
+        padding: 2vw;
+    }
+    .infobox__innerdiv{
+        border: 1px solid;
+    }
+    .infobox-about__h2{
+        position: absolute;
+        left: 50%;
+        width: 18vw;
+        top: 25vh;
+    }
+    .keys_img{
+        display: none;
+    }
+    .section__details{
+        background-image: url(/assets/images/bg_section_details.png);
+        background-size: 124%;
+        background-position: center;
+        align-items: flex-end;
+    }
+    .infobox-details {
+        width: 62%;
+        height: 35%;
+        margin: 0vw 10vw;
+        padding: 2vw;
+        background-color: rgb(255, 255, 255, 0);
+    }
+    .infobox__group--details{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ok_img {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .infobox-details__span{
+        border: 1px solid;
+        text-align: center;
+        padding: 1vw;
+        width: 88%;
+    }
+    .section__pricing{
+        background-image: url(/assets/images/bg_section_pricing.png);
+        background-size: 50%;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        align-items: flex-end;
+        justify-content: initial;
+        padding-top: 16vh;
+    }
+    .pricing-box-wrapper{
+        flex-direction: row;
+        width: 75vw;
+        padding: 3vw;
+        height: initial;
+        justify-content: space-around;
+    }
+    .pricing-box{
+        width: 17vw;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pricing-box__circle {
+        left: calc(50% - 4vw);
+        top: calc(100% - 4vw);
+        border-radius: 4vw;
+        height: 8vw;
+        width: 8vw;
+    }
+    .pricing-box__p {
+        font-size: 0.8rem;
+    }
+    .pricing-footer-wrapper{
+        width: 63vw;
+        height: 10vh;
+        margin: 10vh 6vw;
+        background-color: #345e68;   
+    }
+    .pricing-footer-wrapper__ptotal, .pricing-footer-wrapper__pabout{
+        padding: 1vh 4vh;
+        color: white;
+    }
+    .section__contact{
+        background-image: url(/assets/images/bg_section_contact.png);
+        /* background-size: 50%; */
+        /* background-position: bottom left; */
+        background-repeat: no-repeat;
+        align-items: flex-end;
+        justify-content: initial;
+    }
+    .footer__logo{
+        display: none;
+    }
+    .contact__wrapper{
+        display: flex;
+        justify-content: space-around;
+        height: initial;
+        width: 75vw;
+        padding-top: 12vh;
+    }
+    .contact-box{
+        justify-content: initial;
+    }
+    .contact-box__p{
+        margin: 0.6vw 0vw 2vw 0vw;
+    }
+    .contact-box__span--nr{
+        font-size: 1.2rem;
     }
 }
