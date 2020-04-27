@@ -291,7 +291,10 @@ p, span{
     width: 30%;
     margin-top: 2vh;
 }
-@media screen and (min-width: 358px){
+@media screen and (min-width: 320px){
+    .navigation-bar__logo, .desktop-nav{
+        display: none;
+    }
     .infobox-home{
         justify-content: space-around;
     }
@@ -299,7 +302,10 @@ p, span{
         font-size: 1.1rem;
     }
     .infobox-about__p{
-        font-size: 0.82rem;
+        font-size: 0.75rem;
+    }
+    .infobox-home__desktopH2 .infobox-home__desktopH1, .infobox-home__desktopH2, .infobox-home__desktopH1, .infobox-home__desktop-img, .infobox-home__desktop_p{
+        display: none;
     }
     .infobox-details{
         height: 70%;
@@ -318,10 +324,18 @@ p, span{
         height: 13%;
     }
     .section__contact{
-        background-position: bottom;
+        background-position: 0vw 105vw;
     }
     .footer__logo{
         width: 35%;
+    }
+}
+@media screen and (min-width: 360px){
+    .infobox-about__p{
+        font-size: 0.92rem;
+    }
+    .section__contact{
+        background-position: bottom;
     }
 }
 @media screen and (min-width: 410px){
@@ -341,7 +355,89 @@ p, span{
         font-size: 0.9rem;
     }
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 320px) and (orientation: landscape){
+    .burger__bar {
+        width: 9vw;
+        height: 1.5vw;
+        margin-bottom: 1vw;
+    }
+    .mobile-nav {
+        width: 50vw;
+    }
+    .infobox-home__desktopH2 .infobox-home__desktopH1, .infobox-home__desktopH2, .infobox-home__desktopH1, .infobox-home__desktop_p{
+        display: block;
+    }
+    .infobox-home__mobileH1, .infobox-home__p{
+        display: none;
+    }
+    .infobox-home__img {
+        width: 27%;
+    }
+    .infobox-about{
+        height: 69%;
+    }
+    .infobox-about__p {
+        font-size: 0.72rem;
+    }
+    .keys_img{
+        display: none;
+    }
+    .infobox-details__span{
+        font-size: 0.8rem
+    }
+    .ok_img {
+        width: 6vw;
+        height: 6vw;
+    }
+    .pricing-box-wrapper{
+        flex-direction: row;
+        width: 90vw;
+        padding: 3vw;
+        height: initial;
+        justify-content: space-around;
+    }
+    .pricing-box{
+        width: 27vw;
+        height: 49vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pricing-box__circle {
+        left: calc(50% - 6vw);
+        top: calc(100% - 6vw);
+        border-radius: 6vw;
+        height: 12vw;
+        width: 12vw;
+    }
+    .pricing-box__p {
+        font-size: 0.8rem;
+    }
+    .section__contact{
+        padding-top: 3vh;
+        justify-content: space-between;
+    }
+    .contact-box{
+        height: 20vh;
+    }
+    .contact-box__span{
+        font-size: 0.9rem;
+    }
+    .contact-box__p{
+        font-size: 0.7rem;
+    }
+    .contact__span, .contact__p{
+        margin: 0;
+    }
+    .contact__p{
+        font-size: 0.7rem;
+    }
+    .footer__logo {
+        width: 15%;
+    }
+
+}
+@media screen and (min-width: 768px) and (orientation: landscape){
     .burger{
         display: none;
     }
@@ -397,6 +493,9 @@ p, span{
         height: 30%;
         justify-content: center;
     }
+    .infobox-home__desktopH2 .infobox-home__desktopH1, .infobox-home__desktopH2, .infobox-home__desktopH1, .infobox-home__desktop-img, .infobox-home__desktop_p{
+        display: block;
+    }
     .infobox-home__mobileH1, .infobox-home__p, .infobox-home__img{
         display: none;
     }
@@ -429,7 +528,7 @@ p, span{
     }
     .infobox-about {
         width: 62%;
-        height: 35%;
+        height: 32%;
         margin: 0vw 10vw;
         padding: 2vw;
     }
@@ -441,6 +540,9 @@ p, span{
         left: 50%;
         width: 18vw;
         top: 25vh;
+    }
+    .infobox-about__p{
+        font-weight: 100;
     }
     .keys_img{
         display: none;
@@ -479,7 +581,7 @@ p, span{
         background-repeat: no-repeat;
         align-items: flex-end;
         justify-content: initial;
-        padding-top: 16vh;
+        padding-top: 26vh;
     }
     .pricing-box-wrapper{
         flex-direction: row;
@@ -527,8 +629,8 @@ p, span{
         display: none;
     }
     .contact__wrapper{
-        display: flex;
-        justify-content: space-around;
+        /* display: flex;
+        justify-content: space-around; */
         height: initial;
         width: 75vw;
         padding-top: 12vh;
@@ -538,8 +640,21 @@ p, span{
     }
     .contact-box__p{
         margin: 0.6vw 0vw 2vw 0vw;
+        font-size: 0.7rem;
+    }
+    .contact-box__span{
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        font-weight: 400;
     }
     .contact-box__span--nr{
         font-size: 1.2rem;
+    }
+    .contact-box__phone{
+        width: 18vw;
+    }
+    .contact__p{
+        line-height: 1.7rem;
+        font-size: 0.8rem;
     }
 }
