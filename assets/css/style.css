@@ -29,6 +29,9 @@ p, span{
     left: 5vw; */
     z-index: 50;
 }
+.navigation-bar__logo, .desktop-nav{
+    display: none;
+}
 .burger{
     margin: 3vh;
     display: flex;
@@ -41,9 +44,6 @@ p, span{
     margin-bottom: 1.5vw;
     border-radius: 4px;
     background-color: rgb(190, 190, 190);
-}
-.desktop-nav{
-    display: none;
 }
 .sidedrawer{
     z-index: 51;
@@ -119,6 +119,9 @@ p, span{
     width: 47%;
     display: block;
     margin: 2vh auto;
+}
+.infobox-home__desktopH2 .infobox-home__desktopH1, .infobox-home__desktopH2, .infobox-home__desktopH1, .infobox-home__desktop-img, .infobox-home__desktop_p{
+    display: none;
 }
 /* ABOUT */
 .section__about{
@@ -226,9 +229,6 @@ p, span{
     height: 15%;
     width: 80%
 }
-.pricing-footer-wrapper__ptotal{
-
-}
 .pricing-footer-wrapper__pabout{
     font-size: 0.7rem;    
 }
@@ -268,9 +268,6 @@ p, span{
     justify-content: space-around;
     width: 60%    
 }
-.phone__img{
-    
-}
 .contact-box__span--nr{
     color: black;
     font-weight: 600;
@@ -292,9 +289,6 @@ p, span{
     margin-top: 2vh;
 }
 @media screen and (min-width: 320px){
-    .navigation-bar__logo, .desktop-nav{
-        display: none;
-    }
     .infobox-home{
         justify-content: space-around;
     }
@@ -303,9 +297,6 @@ p, span{
     }
     .infobox-about__p{
         font-size: 0.75rem;
-    }
-    .infobox-home__desktopH2 .infobox-home__desktopH1, .infobox-home__desktopH2, .infobox-home__desktopH1, .infobox-home__desktop-img, .infobox-home__desktop_p{
-        display: none;
     }
     .infobox-details{
         height: 70%;
@@ -353,6 +344,34 @@ p, span{
     }
     .contact__span {
         font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 768px) and (orientation: portrait){
+    html{
+        font-size: 24px;
+    }
+    .mobile-nav {
+        width: 51vw;
+    }
+    .infobox-home__desktopH2, .infobox-home__desktopH1{
+        display: block;
+    }
+    .infobox-home__mobileH1{
+        display: none;
+    }
+    .infobox-home__p{
+        margin: 5vw;
+    }
+    .infobox-about__p {
+        font-size: 1.2rem;
+    }
+    .infobox-home {
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1024px) and (orientation: portrait){
+    html{
+        font-size: 32px;
     }
 }
 @media screen and (min-width: 320px) and (orientation: landscape){
@@ -435,9 +454,11 @@ p, span{
     .footer__logo {
         width: 15%;
     }
-
 }
-@media screen and (min-width: 768px) and (orientation: landscape){
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    html{
+        font-size: 20px;
+    }
     .burger{
         display: none;
     }
@@ -449,16 +470,17 @@ p, span{
         height: 556px;
         padding: 0vw 5vw;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         width: 100vw;
     }
     .navigation-bar__logo {
+        display: block;
         position: fixed;
         top: 5vw;
         left: 5vw;
     }
     .navigation-bar__logoimg{
-        width: 50%;
+        width: 65%;
     }
     .desktop-nav{
         display: block;
@@ -492,6 +514,12 @@ p, span{
         width: 46%;
         height: 30%;
         justify-content: center;
+    }
+    .infobox__innerdiv{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .infobox-home__desktopH2 .infobox-home__desktopH1, .infobox-home__desktopH2, .infobox-home__desktopH1, .infobox-home__desktop-img, .infobox-home__desktop_p{
         display: block;
@@ -543,6 +571,7 @@ p, span{
     }
     .infobox-about__p{
         font-weight: 100;
+        /* font-size: 0.95rem; */
     }
     .keys_img{
         display: none;
@@ -559,6 +588,7 @@ p, span{
         margin: 0vw 10vw;
         padding: 2vw;
         background-color: rgb(255, 255, 255, 0);
+        box-shadow: unset;
     }
     .infobox__group--details{
         justify-content: space-around;
@@ -592,7 +622,7 @@ p, span{
     }
     .pricing-box{
         width: 17vw;
-        height: 25vh;
+        height: 30vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -609,7 +639,7 @@ p, span{
     }
     .pricing-footer-wrapper{
         width: 63vw;
-        height: 10vh;
+        height: 13vh;
         margin: 10vh 6vw;
         background-color: #345e68;   
     }
@@ -633,7 +663,7 @@ p, span{
         justify-content: space-around; */
         height: initial;
         width: 75vw;
-        padding-top: 12vh;
+        padding-top: 20vh;
     }
     .contact-box{
         justify-content: initial;
@@ -656,5 +686,38 @@ p, span{
     .contact__p{
         line-height: 1.7rem;
         font-size: 0.8rem;
+    }
+}
+@media screen and (min-width: 1366px) and (orientation: landscape){
+    html{
+        font-size: 28px;
+    }
+}
+@media screen and (min-width: 1920px) and (orientation: landscape){
+    html{
+        font-size: 32px;
+    }
+    .navigation-bar__logoimg{
+        width: 75%;
+    }
+    .section{
+        padding-top: 15vh;
+    }
+    .infobox-home__desktop-img{
+        top: 41vh;
+    }
+    .infobox-about__h2{
+        top: 34vh;
+    }
+    .section__pricing{
+        padding-top: 26vh;
+    }
+    .section__contact{
+        padding-top: 10vh;
+    }
+}
+@media screen and (min-width: 3840px) and (orientation: landscape){
+    html{
+        font-size: 40px;
     }
 }
