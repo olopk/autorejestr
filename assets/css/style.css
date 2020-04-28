@@ -100,7 +100,7 @@ p, span{
 }
 /* HOME */
 .section__home{
-    background-image: url(./assets/images/glut1.png);
+    background-image: url('../../assets/images/glut1.png');
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
