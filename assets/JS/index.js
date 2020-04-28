@@ -19,6 +19,8 @@ $(document).ready(function(){
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_element ){
                 $(this).css({ transform: 'translateY(0px)'},1000);
+            }else{
+                $(this).css({ transform: 'translateY(60px)'},1000);
             }
         });
     });

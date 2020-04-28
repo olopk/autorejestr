@@ -170,7 +170,7 @@ p, span{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2vh;
-    transform: translateY(40px);
+    transform: translateY(60px);
     transition: ease 1s;
 }
 .infobox-details__span{
@@ -203,7 +203,7 @@ p, span{
     width: 80%;
     height: 24%;
     position: relative;
-    transform: translateY(40px);
+    transform: translateY(60px);
     transition: ease 1s;
 }
 .pricing-box__p{
@@ -459,6 +459,9 @@ p, span{
     html{
         font-size: 20px;
     }
+    .section{
+        padding-top: 20vh;
+    }
     .burger{
         display: none;
     }
@@ -531,7 +534,7 @@ p, span{
         width: 20%;
         position: absolute;
         left: 71vw;
-        top: 34vw;
+        top: 18vw;
     }
     .infobox-home__desktopH1, .infobox-home__desktopH2{
         letter-spacing: 5px;
@@ -556,7 +559,7 @@ p, span{
     }
     .infobox-about {
         width: 62%;
-        height: 32%;
+        height: 45%;
         margin: 0vw 10vw;
         padding: 2vw;
     }
@@ -639,7 +642,7 @@ p, span{
     }
     .pricing-footer-wrapper{
         width: 63vw;
-        height: 13vh;
+        height: 15vh;
         margin: 10vh 6vw;
         background-color: #345e68;   
     }
@@ -663,10 +666,11 @@ p, span{
         justify-content: space-around; */
         height: initial;
         width: 75vw;
-        padding-top: 20vh;
+        padding-top: 10vh;
     }
     .contact-box{
         justify-content: initial;
+        margin: 0;
     }
     .contact-box__p{
         margin: 0.6vw 0vw 2vw 0vw;
@@ -690,12 +694,12 @@ p, span{
 }
 @media screen and (min-width: 1366px) and (orientation: landscape){
     html{
-        font-size: 28px;
+        font-size: 22px;
     }
 }
 @media screen and (min-width: 1920px) and (orientation: landscape){
     html{
-        font-size: 32px;
+        font-size: 24px;
     }
     .navigation-bar__logoimg{
         width: 75%;
@@ -718,6 +722,6 @@ p, span{
 }
 @media screen and (min-width: 3840px) and (orientation: landscape){
     html{
-        font-size: 40px;
+        font-size: 26px;
     }
 }
