@@ -100,7 +100,7 @@ p, span{
 }
 /* HOME */
 .section__home{
-    background-image: url(/assets/images/glut1.png);
+    background-image: url(../../assets/images/glut1.png);
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -125,7 +125,7 @@ p, span{
 }
 /* ABOUT */
 .section__about{
-    background-image: url(/assets/images/glut2.png);
+    background-image: url(../../assets/images/glut2.png);
     background-position: top right;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -152,7 +152,7 @@ p, span{
 }
 /* DETAILS */
 .section__details{
-    background-image: url(/assets/images/glut3.png);
+    background-image: url(../../assets/images/glut3.png);
     background-position: top left;
     background-size: 80%;
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@ p, span{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2vh;
-    transform: translateY(40px);
+    transform: translateY(60px);
     transition: ease 1s;
 }
 .infobox-details__span{
@@ -187,7 +187,6 @@ p, span{
     align-items: center;
     flex-direction: column;
     padding-top: 13vh;
-
 }
 .pricing-box-wrapper{
     display: flex;
@@ -203,7 +202,7 @@ p, span{
     width: 80%;
     height: 24%;
     position: relative;
-    transform: translateY(40px);
+    transform: translateY(60px);
     transition: ease 1s;
 }
 .pricing-box__p{
@@ -234,7 +233,7 @@ p, span{
 }
 /* CONTACT */
 .section__contact{
-    background-image: url(/assets/images/glut4.png);
+    background-image: url(../../assets/images/glut4.png);
     background-position: 0vw 106vw;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -266,7 +265,10 @@ p, span{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 60%    
+    width: 55%    
+}
+.phone_img{
+    width: 6vw;
 }
 .contact-box__span--nr{
     color: black;
@@ -315,7 +317,7 @@ p, span{
         height: 13%;
     }
     .section__contact{
-        background-position: 0vw 105vw;
+        background-position: bottom;
     }
     .footer__logo{
         width: 35%;
@@ -330,20 +332,69 @@ p, span{
     }
 }
 @media screen and (min-width: 410px){
+    h2{
+        font-size: 1.3rem;
+    }
+    .infobox-home__mobileH1{
+        font-size: 2rem; 
+    }
+    .infobox-home__p {
+        font-size: 1.3rem;
+    }
+    .infobox-about{
+        height: 62%;
+    }
     .infobox-about__p {
-        font-size: 0.92rem;
+        font-size: 1rem;
+    }
+    .infobox-details {
+        height: 55%;
+    }
+    .pricing-box-wrapper{
+        justify-content: space-around;
+    }
+    .pricing-box{
+        height: 20%;
     }
     .pricing-box__p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+    .pricing-box__circle {
+        left: calc(50% - 10vw);
+        top: calc(100% - 10vw);
+        border-radius: 10vw;
+        height: 20vw;
+        width: 20vw;
     }
     .pricing-box__price {
         font-size: 1.2rem;
+    }
+    .pricing-footer-wrapper__ptotal{
+        font-size: 1.3rem;
     }
     .contact-box__p {
         font-size: 0.9rem;
     }
     .contact__span {
         font-size: 0.9rem;
+    }
+    .keys_img{
+        top: 75%;
+    }
+    .contact-box__span {
+        font-size: 1.4rem;
+    }
+    .contact-box__span--nr {
+        font-size: 1.3rem;
+    }
+    .contact__span {
+        font-size: 1.1rem;
+    }
+    .contact__p {
+        font-size: 1rem;
+    }
+    .footer__logo{
+        margin-top: 6vh;
     }
 }
 @media screen and (min-width: 768px) and (orientation: portrait){
@@ -363,10 +414,23 @@ p, span{
         margin: 5vw;
     }
     .infobox-about__p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .infobox-home {
         justify-content: center;
+    }
+    .pricing-box-wrapper{
+        height: 80%;
+    }
+    .pricing-box__p {
+        font-size: 0.9rem;
+    }
+    .pricing-box__circle {
+        left: calc(50% - 8vw);
+        top: calc(100% - 8vw);
+        border-radius: 10vw;
+        height: 16vw;
+        width: 16vw;
     }
 }
 @media screen and (min-width: 1024px) and (orientation: portrait){
@@ -459,11 +523,14 @@ p, span{
     html{
         font-size: 20px;
     }
+    .section{
+        padding-top: 20vh;
+    }
     .burger{
         display: none;
     }
     .navigation-bar{
-        background-image: url(/assets/images/navigation-bar.png);
+        background-image: url(../../assets/images/navigation-bar.png);
         background-position: top;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -480,7 +547,7 @@ p, span{
         left: 5vw;
     }
     .navigation-bar__logoimg{
-        width: 65%;
+        width: 48%;
     }
     .desktop-nav{
         display: block;
@@ -506,7 +573,7 @@ p, span{
         font-family: "Arial Black", Gadget, sans-serif;
     }
     .section__home{
-        background-image: url(/assets/images/glu1_desktop.png), url(/assets/images/bg_section_home.png);
+        background-image: url(../../assets/images/glu1_desktop.png), url(../../assets/images/bg_section_home.png);
         background-position: top, bottom;
         background-repeat: no-repeat, no-repeat;
     }
@@ -531,7 +598,7 @@ p, span{
         width: 20%;
         position: absolute;
         left: 71vw;
-        top: 34vw;
+        top: 37vw;
     }
     .infobox-home__desktopH1, .infobox-home__desktopH2{
         letter-spacing: 5px;
@@ -549,14 +616,14 @@ p, span{
         font-size: 1.2rem;
     }
     .section__about{
-        background-image: url(/assets/images/bg_section_about.png);
+        background-image: url(../../assets/images/bg_section_about.png);
         background-size: 124%;
         background-position: center;
         align-items: flex-end;
     }
     .infobox-about {
         width: 62%;
-        height: 32%;
+        height: 45%;
         margin: 0vw 10vw;
         padding: 2vw;
     }
@@ -566,7 +633,7 @@ p, span{
     .infobox-about__h2{
         position: absolute;
         left: 50%;
-        width: 18vw;
+        width: 20vw;
         top: 25vh;
     }
     .infobox-about__p{
@@ -577,7 +644,7 @@ p, span{
         display: none;
     }
     .section__details{
-        background-image: url(/assets/images/bg_section_details.png);
+        background-image: url(../../assets/images/bg_section_details.png);
         background-size: 124%;
         background-position: center;
         align-items: flex-end;
@@ -605,7 +672,7 @@ p, span{
         width: 88%;
     }
     .section__pricing{
-        background-image: url(/assets/images/bg_section_pricing.png);
+        background-image: url(../../assets/images/bg_section_pricing.png);
         background-size: 50%;
         background-position: bottom left;
         background-repeat: no-repeat;
@@ -639,7 +706,7 @@ p, span{
     }
     .pricing-footer-wrapper{
         width: 63vw;
-        height: 13vh;
+        height: 15vh;
         margin: 10vh 6vw;
         background-color: #345e68;   
     }
@@ -648,7 +715,7 @@ p, span{
         color: white;
     }
     .section__contact{
-        background-image: url(/assets/images/bg_section_contact.png);
+        background-image: url(../../assets/images/bg_section_contact.png);
         /* background-size: 50%; */
         /* background-position: bottom left; */
         background-repeat: no-repeat;
@@ -663,10 +730,11 @@ p, span{
         justify-content: space-around; */
         height: initial;
         width: 75vw;
-        padding-top: 20vh;
+        padding-top: 10vh;
     }
     .contact-box{
         justify-content: initial;
+        margin: 0;
     }
     .contact-box__p{
         margin: 0.6vw 0vw 2vw 0vw;
@@ -683,19 +751,31 @@ p, span{
     .contact-box__phone{
         width: 18vw;
     }
+    .phone_img{
+        height: 2vw;
+        margin: 0 1vw;
+    }
     .contact__p{
         line-height: 1.7rem;
         font-size: 0.8rem;
     }
 }
+@media screen and (min-width: 1280px) and (orientation: landscape){
+    .infobox-home__desktop-img{
+        top: 24vw;
+    }
+    .phone_img{
+        width: 2vw;
+    }
+}
 @media screen and (min-width: 1366px) and (orientation: landscape){
     html{
-        font-size: 28px;
+        font-size: 22px;
     }
 }
 @media screen and (min-width: 1920px) and (orientation: landscape){
     html{
-        font-size: 32px;
+        font-size: 24px;
     }
     .navigation-bar__logoimg{
         width: 75%;
@@ -718,6 +798,6 @@ p, span{
 }
 @media screen and (min-width: 3840px) and (orientation: landscape){
     html{
-        font-size: 40px;
+        font-size: 26px;
     }
 }
