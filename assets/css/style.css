@@ -187,7 +187,6 @@ p, span{
     align-items: center;
     flex-direction: column;
     padding-top: 13vh;
-
 }
 .pricing-box-wrapper{
     display: flex;
@@ -266,7 +265,10 @@ p, span{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 60%    
+    width: 55%    
+}
+.phone_img{
+    width: 6vw;
 }
 .contact-box__span--nr{
     color: black;
@@ -315,7 +317,7 @@ p, span{
         height: 13%;
     }
     .section__contact{
-        background-position: 0vw 105vw;
+        background-position: bottom;
     }
     .footer__logo{
         width: 35%;
@@ -330,20 +332,69 @@ p, span{
     }
 }
 @media screen and (min-width: 410px){
+    h2{
+        font-size: 1.3rem;
+    }
+    .infobox-home__mobileH1{
+        font-size: 2rem; 
+    }
+    .infobox-home__p {
+        font-size: 1.3rem;
+    }
+    .infobox-about{
+        height: 62%;
+    }
     .infobox-about__p {
-        font-size: 0.92rem;
+        font-size: 1rem;
+    }
+    .infobox-details {
+        height: 55%;
+    }
+    .pricing-box-wrapper{
+        justify-content: space-around;
+    }
+    .pricing-box{
+        height: 20%;
     }
     .pricing-box__p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+    .pricing-box__circle {
+        left: calc(50% - 10vw);
+        top: calc(100% - 10vw);
+        border-radius: 10vw;
+        height: 20vw;
+        width: 20vw;
     }
     .pricing-box__price {
         font-size: 1.2rem;
+    }
+    .pricing-footer-wrapper__ptotal{
+        font-size: 1.3rem;
     }
     .contact-box__p {
         font-size: 0.9rem;
     }
     .contact__span {
         font-size: 0.9rem;
+    }
+    .keys_img{
+        top: 75%;
+    }
+    .contact-box__span {
+        font-size: 1.4rem;
+    }
+    .contact-box__span--nr {
+        font-size: 1.3rem;
+    }
+    .contact__span {
+        font-size: 1.1rem;
+    }
+    .contact__p {
+        font-size: 1rem;
+    }
+    .footer__logo{
+        margin-top: 6vh;
     }
 }
 @media screen and (min-width: 768px) and (orientation: portrait){
@@ -363,10 +414,23 @@ p, span{
         margin: 5vw;
     }
     .infobox-about__p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .infobox-home {
         justify-content: center;
+    }
+    .pricing-box-wrapper{
+        height: 80%;
+    }
+    .pricing-box__p {
+        font-size: 0.9rem;
+    }
+    .pricing-box__circle {
+        left: calc(50% - 8vw);
+        top: calc(100% - 8vw);
+        border-radius: 10vw;
+        height: 16vw;
+        width: 16vw;
     }
 }
 @media screen and (min-width: 1024px) and (orientation: portrait){
@@ -483,7 +547,7 @@ p, span{
         left: 5vw;
     }
     .navigation-bar__logoimg{
-        width: 65%;
+        width: 48%;
     }
     .desktop-nav{
         display: block;
@@ -534,7 +598,7 @@ p, span{
         width: 20%;
         position: absolute;
         left: 71vw;
-        top: 18vw;
+        top: 37vw;
     }
     .infobox-home__desktopH1, .infobox-home__desktopH2{
         letter-spacing: 5px;
@@ -569,7 +633,7 @@ p, span{
     .infobox-about__h2{
         position: absolute;
         left: 50%;
-        width: 18vw;
+        width: 20vw;
         top: 25vh;
     }
     .infobox-about__p{
@@ -687,9 +751,21 @@ p, span{
     .contact-box__phone{
         width: 18vw;
     }
+    .phone_img{
+        height: 2vw;
+        margin: 0 1vw;
+    }
     .contact__p{
         line-height: 1.7rem;
         font-size: 0.8rem;
+    }
+}
+@media screen and (min-width: 1280px) and (orientation: landscape){
+    .infobox-home__desktop-img{
+        top: 24vw;
+    }
+    .phone_img{
+        width: 2vw;
     }
 }
 @media screen and (min-width: 1366px) and (orientation: landscape){
