@@ -526,6 +526,9 @@ p, span{
     .section{
         padding-top: 20vh;
     }
+    .section__home{
+        padding-top: 5vh;
+    }
     .burger{
         display: none;
     }
@@ -623,7 +626,7 @@ p, span{
     }
     .infobox-about {
         width: 62%;
-        height: 45%;
+        height: 51%;
         margin: 0vw 10vw;
         padding: 2vw;
     }
@@ -690,7 +693,7 @@ p, span{
     .pricing-box{
         width: 17vw;
         height: 30vh;
-        padding: 1vw;
+        padding: 0 0 2vw 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -778,6 +781,9 @@ p, span{
     html{
         font-size: 24px;
     }
+    h2 {
+        font-size: 1.5rem;
+    }
     .navigation-bar__logoimg{
         width: 75%;
     }
@@ -788,7 +794,10 @@ p, span{
         top: 41vh;
     }
     .infobox-about__h2{
-        top: 34vh;
+        top: 25vh;
+    }
+    .infobox-about__p {
+        font-size: 1rem;
     }
     .section__pricing{
         padding-top: 26vh;
@@ -796,9 +805,22 @@ p, span{
     .section__contact{
         padding-top: 10vh;
     }
+    .pricing-box{
+        height: 25vh;
+        padding: 0vw 1vw 2vw 1vw;
+    }
+    .pricing-footer-wrapper{
+        height: 10vh;
+    }
+    .contact__wrapper{
+        padding-top: 15vh;
+    }
 }
 @media screen and (min-width: 3840px) and (orientation: landscape){
     html{
         font-size: 26px;
+    }
+    h2 {
+        font-size: 2.5rem;
     }
 }
