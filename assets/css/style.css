@@ -546,7 +546,7 @@ p, span{
     .navigation-bar__logo {
         display: block;
         position: fixed;
-        top: 3vw;
+        top: 2vw;
         left: 5vw;
     }
     .navigation-bar__logoimg{
