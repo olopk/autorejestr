@@ -550,7 +550,7 @@ p, span{
         left: 5vw;
     }
     .navigation-bar__logoimg{
-        width: 48%;
+        width: 30%;
     }
     .desktop-nav{
         display: block;
@@ -785,7 +785,7 @@ p, span{
         font-size: 1.5rem;
     }
     .navigation-bar__logoimg{
-        width: 75%;
+        width: 40%;
     }
     .section{
         padding-top: 15vh;
@@ -822,5 +822,8 @@ p, span{
     }
     h2 {
         font-size: 2.5rem;
+    }
+    .navigation-bar__logoimg {
+        width: 55%;
     }
 }
