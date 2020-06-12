@@ -550,7 +550,7 @@ p, span{
         left: 5vw;
     }
     .navigation-bar__logoimg{
-        width: 48%;
+        width: 30%;
     }
     .desktop-nav{
         display: block;
@@ -785,7 +785,7 @@ p, span{
         font-size: 1.5rem;
     }
     .navigation-bar__logoimg{
-        width: 75%;
+        width: 40%;
     }
     .section{
         padding-top: 15vh;
@@ -810,7 +810,8 @@ p, span{
         padding: 0vw 1vw 2vw 1vw;
     }
     .pricing-footer-wrapper{
-        height: 10vh;
+        height: 10vh;/home/ololek/Dokumenty/Udost/ar_black.png
+        /home/ololek/Dokumenty/Udost/ar_white.png
     }
     .contact__wrapper{
         padding-top: 15vh;
@@ -822,5 +823,8 @@ p, span{
     }
     h2 {
         font-size: 2.5rem;
+    }
+    .navigation-bar__logoimg {
+        width: 55%;
     }
 }
