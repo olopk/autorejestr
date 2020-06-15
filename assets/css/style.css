@@ -320,7 +320,7 @@ p, span{
         background-position: bottom;
     }
     .footer__logo{
-        width: 35%;
+        width: 30%;
     }
 }
 @media screen and (min-width: 360px){
@@ -331,6 +331,25 @@ p, span{
         background-position: bottom;
     }
 }
+@media screen and (max-width: 375px) and (min-height: 812px){
+    .infobox-about {
+        height: 62%;
+    }
+    .infobox-details {
+        height: 60%;
+    }
+    .pricing-box__p {
+        font-size: 0.85rem;
+    }
+    .pricing-box-wrapper {
+        height: 54%;
+        width: 80%;
+    }
+    .footer__logo {
+        margin-top: 6vh;
+    }
+}
+
 @media screen and (min-width: 410px){
     h2{
         font-size: 1.3rem;
@@ -392,9 +411,6 @@ p, span{
     }
     .contact__p {
         font-size: 1rem;
-    }
-    .footer__logo{
-        margin-top: 6vh;
     }
 }
 @media screen and (min-width: 768px) and (orientation: portrait){
@@ -692,7 +708,7 @@ p, span{
     }
     .pricing-box{
         width: 17vw;
-        height: 30vh;
+        height: 25vh;
         padding: 0 0 2vw 0;
         display: flex;
         justify-content: center;
