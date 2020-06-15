@@ -553,7 +553,7 @@ p, span{
         background-position: top;
         background-size: 100%;
         background-repeat: no-repeat;
-        height: 556px;
+        height: 300px;
         padding: 0vw 5vw;
         display: flex;
         justify-content: flex-end;
@@ -562,11 +562,12 @@ p, span{
     .navigation-bar__logo {
         display: block;
         position: fixed;
+        width: 170px;
         top: 2vw;
         left: 5vw;
     }
     .navigation-bar__logoimg{
-        width: 30%;
+        width: 100%;
     }
     .desktop-nav{
         display: block;
@@ -799,9 +800,6 @@ p, span{
     }
     h2 {
         font-size: 1.5rem;
-    }
-    .navigation-bar__logoimg{
-        width: 40%;
     }
     .section{
         padding-top: 15vh;
