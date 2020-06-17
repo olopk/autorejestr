@@ -14,4 +14,4 @@ Commercial project, website for car-registration company.
 
 Aleksander Wojas
 
-[Live version](http://olopk.github.io/autorejestr)
+[Live version](http://www.auto-rejestr.pl)
